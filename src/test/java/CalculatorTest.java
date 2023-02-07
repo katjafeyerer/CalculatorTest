@@ -1,12 +1,18 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
-    int a = 4;
-    int b = 3;
+    int a;
+    int b;
 
+    @BeforeEach
+    void setUp() {
+        a = 4;
+        b = 3;
+    }
 
     @org.junit.jupiter.api.Test
     void add() {
